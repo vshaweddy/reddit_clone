@@ -1,0 +1,7 @@
+<h2>Hello, world!</h2>
+
+<ul>
+  <% @subreddits.each do |subreddit| %>
+  <li><%= link_to subreddit.name, subreddit_path(subreddit) %></li>
+  <% end %>
+</ul>
